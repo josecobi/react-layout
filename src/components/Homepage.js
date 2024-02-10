@@ -2,10 +2,10 @@ import Header from './Header';
 import SearchBar from './SearchBar';
 import EmployeeList from './EmployeeList';
 
-function Homepage({employeeData}) {
+function Homepage({employeeData, homepageHeader}) {
   return (
     <div className="homepage">
-        <Header />
+        <Header homepageHeader = {homepageHeader}/>
         <SearchBar />
         <EmployeeList employeeData = {employeeData} />
     </div>

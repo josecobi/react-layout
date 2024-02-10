@@ -1,10 +1,10 @@
 import Header from "./Header"
 import EmployeeCard from "./EmployeeCard"
-function EmployeePage({employeeData}) {
+function EmployeePage({employeeData, employeePageHeader}) {
   return (
     <div className="employeepage">
-        <Header />
-       <EmployeeCard employeeData = {employeeData} />
+        <Header emplyeePageHeader = {employeePageHeader}/>
+        <EmployeeCard employeeData = {employeeData} />
     </div>
   )
 }

@@ -43,10 +43,13 @@ function App() {
         sms: "777-777-9311",
         email:"pj@me.me"}
   ]
+
+  const homepageHeader = "Employee Directory";
+  const emplyeePageHeader = "Employee";
   return (
     <div className="App">
-      <Homepage employeeData = {employeeData}/>
-      <EmployeePage employeeData = {employeeData}/>
+      <Homepage employeeData = {employeeData} homepageHeader = {homepageHeader}/>
+      <EmployeePage employeeData = {employeeData} employeePageHeader = {emplyeePageHeader}/>
     </div>
   );
 }

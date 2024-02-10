@@ -46,8 +46,7 @@ function App() {
   return (
     <div className="App">
       <Homepage employeeData = {employeeData}/>
-     
-      <EmployeePage />
+      <EmployeePage employeeData = {employeeData}/>
     </div>
   );
 }

@@ -1,13 +1,11 @@
-import PhoneNumber from "./PhoneNumber"
-import EmployeeCarHeader from "./EmployeeCarHeader"
+import Contact from "./Contact"
+import EmployeeCardHeader from "./EmployeeCardHeader"
 
-function EmployeeCard() {
+function EmployeeCard({employeeData}) {
   return (
     <div className="employeeCard">
-        <EmployeeCarHeader /> 
-        <PhoneNumber />
-        <PhoneNumber />
-        <PhoneNumber />
+        <EmployeeCardHeader employeeData = {employeeData[1]}/> 
+        <Contact employeeData = {employeeData[1]}/>
     </div>
 
   )

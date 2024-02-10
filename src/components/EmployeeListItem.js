@@ -1,5 +1,4 @@
 function EmployeeListItem({employeeData}) {
-  console.log(employeeData)
   return (
     <div className="employeeListItem">
         <h4>{employeeData.name}</h4>
